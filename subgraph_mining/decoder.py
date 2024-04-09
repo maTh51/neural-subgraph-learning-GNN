@@ -11,8 +11,9 @@ import torch.optim as optim
 import torch.nn as nn
 import torch.nn.functional as F
 from tqdm import tqdm
+from spektral.datasets import TUDataset
 
-from torch_geometric.datasets import TUDataset, PPI
+from torch_geometric.datasets import PPI
 from torch_geometric.datasets import Planetoid, KarateClub, QM7b
 from torch_geometric.data import DataLoader
 import torch_geometric.utils as pyg_utils
