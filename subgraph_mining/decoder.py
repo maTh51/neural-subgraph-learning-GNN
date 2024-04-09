@@ -11,7 +11,7 @@ import torch.optim as optim
 import torch.nn as nn
 import torch.nn.functional as F
 from tqdm import tqdm
-from spektral.datasets import TUDataset
+from dgl.data import TUDataset
 
 from torch_geometric.datasets import PPI
 from torch_geometric.datasets import Planetoid, KarateClub, QM7b
