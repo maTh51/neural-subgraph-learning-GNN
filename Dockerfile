@@ -1,10 +1,10 @@
 FROM pytorch/pytorch:1.4-cuda10.1-cudnn7-runtime
 
-WORKDIR /app
+WORKDIR /spminer
 
 RUN apt-get update && apt-get install -y git && apt-get install -y libfreetype6-dev libxft-dev
 
-RUN git clone https://github.com/maTh51/neural-subgraph-learning-GNN /app
+RUN git clone https://github.com/maTh51/neural-subgraph-learning-GNN /spminer
 
 RUN pip install -r requirements.txt
 

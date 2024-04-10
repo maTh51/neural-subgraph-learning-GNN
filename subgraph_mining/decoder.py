@@ -257,7 +257,8 @@ def main():
         dataset = TUDataset(root='/tmp/ENZYMES', name='ENZYMES')
         task = 'graph'
     elif args.dataset == 'cox2':
-        dataset = TUDataset(root='/tmp/Cox2', name='COX2')
+        # dataset = TUDataset(root='/tmp/Cox2', name='COX2')
+        dataset = read_graph_corpus("/data/COX2_convert.txt")
         task = 'graph'
     elif args.dataset == 'cuneiform':
         dataset = TUDataset(root='/tmp/Cuneiform', name='Cuneiform')
