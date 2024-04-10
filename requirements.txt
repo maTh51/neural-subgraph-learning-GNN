@@ -52,10 +52,10 @@ tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
 test-tube==0.7.5
 tifffile==2021.11.2
-torch @ https://download.pytorch.org/whl/cpu/torch-1.4.0%2Bcpu-cp37-cp37m-linux_x86_64.whl
-torch-geometric==1.4.3
-torch-scatter @ https://data.pyg.org/whl/torch-1.4.0%2Bcpu/torch_scatter-2.0.4-cp37-cp37m-linux_x86_64.whl
-torch-sparse @ https://data.pyg.org/whl/torch-1.4.0%2Bcpu/torch_sparse-0.6.1-cp37-cp37m-linux_x86_64.whl
+# torch @ https://download.pytorch.org/whl/cpu/torch-1.4.0%2Bcpu-cp37-cp37m-linux_x86_64.whl
+# torch-geometric==1.4.3
+# torch-scatter @ https://data.pyg.org/whl/torch-1.4.0%2Bcpu/torch_scatter-2.0.4-cp37-cp37m-linux_x86_64.whl
+# torch-sparse @ https://data.pyg.org/whl/torch-1.4.0%2Bcpu/torch_sparse-0.6.1-cp37-cp37m-linux_x86_64.whl
 tqdm==4.43.0
 typing_extensions==4.4.0
 urllib3==1.26.13
