@@ -254,23 +254,27 @@ def main():
 
     print("Using dataset {}".format(args.dataset))
     if args.dataset == 'enzymes':
-        dataset = TUDataset(root='/tmp/ENZYMES', name='ENZYMES')
+        # dataset = TUDataset(root='/tmp/ENZYMES', name='ENZYMES')
+        dataset = readGraphs("data/ENZYMES_convert.txt")
         task = 'graph'
     elif args.dataset == 'cox2':
         # dataset = TUDataset(root='/tmp/Cox2', name='COX2')
         dataset = readGraphs("data/COX2_convert.txt")
         task = 'graph'
     elif args.dataset == 'cuneiform':
-        dataset = TUDataset(root='/tmp/Cuneiform', name='Cuneiform')
+        # dataset = TUDataset(root='/tmp/Cuneiform', name='Cuneiform')
+        dataset = readGraphs("data/Cuneiform_convert.txt")
         task = 'graph'
     elif args.dataset == 'aids':
-        dataset = TUDataset(root='/tmp/AIDS', name='AIDS')
+        # dataset = TUDataset(root='/tmp/AIDS', name='AIDS')
+        dataset = readGraphs("data/AIDS_convert.txt")
         task = 'graph'
     elif args.dataset == 'reddit-binary':
         dataset = TUDataset(root='/tmp/REDDIT-BINARY', name='REDDIT-BINARY')
         task = 'graph'
     elif args.dataset == 'dblp':
-        dataset = TUDataset(root='/tmp/dblp', name='DBLP_v1')
+        # dataset = TUDataset(root='/tmp/dblp', name='DBLP_v1')
+        dataset = readGraphs("data/DBLV_v1_convert.txt")
         task = 'graph-truncate'
     elif args.dataset == 'coil':
         dataset = TUDataset(root='/tmp/coil', name='COIL-DEL')
