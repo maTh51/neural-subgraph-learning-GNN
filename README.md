@@ -1,3 +1,29 @@
+# Aprendizado Descritivo - Seminário 3 - Papel 5
+
+## Integrantes: 
+### Fernanda Luiza Tobias, Gabriel Bifano Freddi, Hugo Parreiras Nunes Baraky, João Vítor Dos Santos Vaz, Joao Vitor Santana Depollo, Matheus Tiago Pimenta De Souza, Rodrigo Sales Nascimento, Vinicius Alves De Faria Resende
+
+Este trabalho consiste em avaliações de trabalhos recentes na área de Aprendizado Descritivo, subtema de mineração de grafos frequentes. Link do artigo: https://arxiv.org/abs/2402.14367 .
+
+## Como rodar o código via Docker:
+
+Baixe ou copie o código do Dockerfile nesse repositório para a máquina de destino (não precisa necessariamente clonar o repositório, já que o docker fará isso). 
+
+Edite o comando na última linha com a configuração necessária (em especial o dataset desejado). Em seguida, execute o comando:
+
+```
+docker build . -t spminer
+```
+
+Crie duas pastas: uma para o arquivo pickle com os resultados (e.g. results), e outra para as imagems (e.g. plots). Por fim, rode a imagem, passando essas pastas como volume:
+
+```
+docker run -v /caminho/para/results:/spminer/results -v /caminho/para/plots:/spminer/plots/cluster spminer
+```
+
+Por rodar na CPU, o tempo total de execução varia. Testes foram de 10 minutos (24 core) até 40.
+
+
 # Neural Subgraph Learning Library
 
 Neural Subgraph Learning (NSL) is a general library that implements various tasks related to
